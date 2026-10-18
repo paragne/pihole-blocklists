@@ -1,0 +1,42 @@
+# Title: paragone custom blocklist
+# Description: Personal additions on top of StevenBlack/hosts
+# Format: ABP-style (||domain^ blocks the domain AND every subdomain). Needs Pi-hole v6.
+# Last modified: 2026-10-18
+
+# ============================================================
+# Roku — ads, ad-tech, telemetry
+# ============================================================
+# Ad serving (covers p.ads.roku.com, identity.ads.roku.com, ...)
+||ads.roku.com^
+# Roku's ad server / ad measurement domain
+||ravm.tv^
+# DataXu, Roku's DSP (now Roku OneView)
+||w55c.net^
+||dataxu.com^
+# Telemetry (austin/scribe/cooper/midland/liberty/mobile/giga...logs.roku.com)
+||logs.roku.com^
+# Usage tracking / tracing on the screensaver/recommendations service
+||track.sr.roku.com^
+||traces.sr.roku.com^
+# !!! Deliberately blocked: Roku only used for Plex + YouTube (2026-10-18) !!!
+# Thumbnails when scrubbing in Roku's own content (Plex/YouTube supply their own)
+||bif.sr.roku.com^
+# Channel store / account services
+||cloudservices.roku.com^
+# Live TV guide
+||epgreg.sr.roku.com^
+
+# ============================================================
+# Pinterest — ads, conversion tag, analytics
+# ============================================================
+||ads.pinterest.com^
+||ads-dev.pinterest.com^
+||analytics.pinterest.com^
+# Pinterest Tag (conversion pixel on third-party sites)
+||ct.pinterest.com^
+||trk.pinterest.com^
+||log.pinterest.com^
+# Pinterest's ad attribution partner
+||pinterest.adsymptotic.com^
+# --- Optional: kills "Save" buttons and embedded pins on other sites ---
+# ||widgets.pinterest.com^
