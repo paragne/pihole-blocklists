@@ -25,6 +25,10 @@
 ||cloudservices.roku.com^
 # Live TV guide
 ||epgreg.sr.roku.com^
+# Roku ad measurement / attribution
+||roku.admeasurement.com^
+# Home-screen recommendation / advertising imagery
+||images.sr.roku.com^
 
 # ============================================================
 # Pinterest — ads, conversion tag, analytics
